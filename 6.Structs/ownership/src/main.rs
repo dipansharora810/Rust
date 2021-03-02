@@ -1,8 +1,20 @@
+
 struct User {
     username: String,
     email: String,
     sign_in_count: u64,
     active: bool,
+}
+
+struct Rectangle{
+    height: u32,
+    width: u32,
+}
+
+impl Rectangle{
+    fn area(&self) -> u32{
+        self.height*self.width
+    }
 }
 
 fn build_user(email: String, username: String) -> User{
@@ -44,4 +56,10 @@ fn main() {
     let area = area_rectangle(width, height);
     println!("Area of rectangle : {}", area);
 
+    let rect1 = Rectangle{
+        width : 10,
+        height: 15,
+    };
+
+    println!("Area of rect1: {}", rect1.area());
 }
