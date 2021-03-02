@@ -6,7 +6,6 @@ fn main() {
     // x = 10;
     println!("x = {}",x);
 
-
     let mut y = 10;
     println!("y = {}",y);
 
@@ -24,7 +23,4 @@ fn main() {
     let spaces = spaces.len();
 
     println!("spaces = {}",spaces);
-
-    
-
 }
